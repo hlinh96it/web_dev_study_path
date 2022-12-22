@@ -1,0 +1,17 @@
+h1, h2, p {
+    color: green;
+    }
+
+.center {
+    text-align: center;
+    color: blueviolet;
+    }
+
+body {
+    background-color: antiquewhite;
+    }
+
+p.dotted {
+    border-style: dotted;
+    }
+

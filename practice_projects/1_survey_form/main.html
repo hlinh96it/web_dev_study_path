@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<div id="outside">
+    <form id="survey-form" action="/my-handling-form-page" method="post">
+        <h1 id="title">
+            Application for permission to date my daughter
+        </h1>
+        <p id="description">
+            <b>Note: </b> Form is to be completed at least 21 days prior to date
+        </p>
+
+
+        <!-- Personal details -->
+        <fieldset>
+            <!-- Group of widgets that share the same purpose, for styling and semantic purposes -->
+            <legend>Personal details</legend>
+
+            <!-- Formally describes the purpose of the fieldset -->
+            <div>
+                <label id="name-label" for="name">Name: </label>
+                <input type="text" required id="name" name="user_name" placeholder="Enter name here">
+            </div>
+
+            <div>
+                <label id="address-label" for="address">Address:</label>
+                <input type="text" id="address" name="Address" placeholder="Enter address here">
+            </div>
+
+            <div>
+                <label id="email-label" for="email">Email: </label>
+                <input type="email" required id="email" name="user_name" placeholder="Enter email here">
+            </div>
+
+            <!-- Ratio button -->
+            <div>
+                <label id="gender" for="Gender">Gender</label>
+                    <input type="radio" name="gender" value="male" checked>Male
+                    <input type="radio" name="gender" value="female">Female
+            </div>
+            <br>
+            <label id="date-label" for="date-label">Date of proposed outing
+                <input type="date" name="bday">
+            </label>
+        </fieldset>
+
+        <!-- Check box -->
+        <fieldset>
+            <legend for="Gender">Check all that apply</legend>
+            <p>
+                <input type="checkbox" name="tatoo" value="tatoo">I have tatoos or piercing <br>
+                <input type="checkbox" name="age" value="Car"> I am older brother <br>
+                <input type="checkbox" name="car" value="car"> I have a car <br>
+            </p>
+        </fieldset>
+
+        <!-- Drop down menu -->
+        <fieldset>
+            <legend>Information selection</legend>
+            <div>
+                <label id="politics" for="politics">Political persuasion</label>
+                <select id="dropdown1">
+                    <option value="left">Left wing</option>
+                    <option value="right">Right wing</option>
+                    <option value="conservative">Conservative</option>
+                </select>
+                <br>
+                <label for="politics">Education level completed: </label>
+                <select id="dropdown2">
+                    <option value="university">University</option>
+                    <option value="college">College</option>
+                </select>
+            </div>
+        </fieldset>
+
+        <!-- Text area -->
+        <fieldset>
+            <legend>Essay selection</legend>
+            <div>
+                <label for="msg1"></label>
+                <p>In 50 words or more to explain why you want to date my daughter</p>
+                <textarea id="msg1" name="user_message" rows="5" cols="80" placeholder="Enter text here"></textarea>
+            </div>
+            <div>
+                <label for="msg2"></label>
+                <p>Please upload 2 contact details</p>
+                <textarea id="msg2" name="user_message" rows="5" cols="80" placeholder="Enter text here"></textarea>
+            </div>
+
+            <p>Upload police clearance certificate, bank statement and medical certificates</p>
+            <button>Attach files</button>
+
+        </fieldset>
+
+        <div id="submit-button">
+            <button type="submit" id="submit">Send your application</button>
+        </div>
+
+    </form>
+</div>
+
+</body>
+</html>
